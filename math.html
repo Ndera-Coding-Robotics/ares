@@ -4,62 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Formulas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 24px;
-            background: #f7f9fc;
-            color: #111;
-        }
-        h1, h2 {
-            color: #1a3355;
-        }
-        section {
-            background: #fff;
-            border: 1px solid #d4dce6;
-            border-radius: 10px;
-            padding: 18px;
-            margin-bottom: 20px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-        }
-        dl {
-            margin: 0;
-        }
-        dt {
-            font-weight: 700;
-            margin-top: 14px;
-        }
-        dd {
-            margin: 4px 0 0 24px;
-        }
-        .formula {
-            display: inline-block;
-            font-family: 'Courier New', monospace;
-            background: #eef3fb;
-            padding: 6px 10px;
-            border-radius: 6px;
-            margin-top: 6px;
-        }
-        .back-button {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.8rem 1.2rem;
-            background: #1a3355;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-        }
-        .back-button:hover {
-            background: #162846;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h1>Math Formula Reference</h1>
-    <section>
-        <h2>Algebra</h2>
+
+    <header>
+        <h1>Math Formula Reference</h1>
+        <p>Key algebra, geometry, and calculus equations for quick review.</p>
+    </header>
+    
+    <main>
+
+        //--Algebra section--
+
+        <section>
+            <h2>Algebra</h2>
         <dl>
             <dt>Quadratic Formula</dt>
             <dd><span class="formula">x = (-b ± √(b² - 4ac)) / (2a)</span></dd>
@@ -77,6 +36,8 @@
             <dd><span class="formula">aₙ = a₁ + (n - 1)d</span></dd>
         </dl>
     </section>
+
+    //--Geometry section--
 
     <section>
         <h2>Geometry</h2>
@@ -97,6 +58,8 @@
             <dd><span class="formula">a² + b² = c²</span></dd>
         </dl>
     </section>
+
+    //--Claculus section--
 
     <section>
         <h2>Calculus</h2>
