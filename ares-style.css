@@ -60,9 +60,9 @@ button {
       inset-inline-start: 0;
       inset-inline-end: 0;
       z-index: 1;
-      fill: var(--inspirational-neutral-foreground-rest);
+      fill: white;
 
-      > div {
+    div {
         flex: 1;
         display: flex;
         position: relative;
@@ -73,6 +73,7 @@ button {
       }
 
       .header-button {
+        
         width: 40px;
         height: 40px;
       }
@@ -86,11 +87,13 @@ button {
       }
 
       ntp-waffle {
+        border-radius: 5px;
         position-area: bottom span-right;
         position-anchor: --anchor-waffle;
       }
 
       ntp-settings {
+        border-radius: 5px;
         position-area: bottom span-left;
         position-anchor: --anchor-settings;
       }
