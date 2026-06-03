@@ -29,75 +29,75 @@ header p{
 }
 
 button {
-      border: none;
-      background: none;
-      box-shadow: none;
-      outline: none;
-      cursor: pointer;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      border: 1px solid transparent;
-
-      &:hover {
-        background-color: var(--neutral-fill-rest);
-      }
-
-      &:focus-visible {
-        outline: -webkit-focus-ring-color auto 1px;
-      }
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
 }
+
+button:hover {
+  background-color: var(--neutral-fill-rest);
+}
+
+button:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 #header {
-      height: var(--header-height);
-      display: flex;
-      align-items: center;
-      padding: 0px 26px 0 22px;
-      box-sizing: border-box;
-      position: absolute;
-      inset-inline-start: 0;
-      inset-inline-end: 0;
-      z-index: 1;
-      fill: white;
-
-    div {
-        flex: 1;
-        display: flex;
-        position: relative;
-      }
-
-      #header-right {
-        justify-content: flex-end;
-      }
-
-      .header-button {
-        
-        width: 40px;
-        height: 40px;
-      }
-
-      #waffle {
-        anchor-name: --anchor-waffle;
-      }
-
-      #settings {
-        anchor-name: --anchor-settings;
-      }
-
-      ntp-waffle {
-        border-radius: 5px;
-        position-area: bottom span-right;
-        position-anchor: --anchor-waffle;
-      }
-
-      ntp-settings {
-        border-radius: 5px;
-        position-area: bottom span-left;
-        position-anchor: --anchor-settings;
-      }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px 0;
+  box-sizing: border-box;
+  position: relative;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  z-index: 1;
+  fill: white;
 }
+
+#header > div {
+  display: flex;
+  align-items: center;
+}
+
+#header-right {
+  justify-content: flex-end;
+}
+
+.header-button {
+  width: 40px;
+  height: 40px;
+}
+
+#waffle {
+  anchor-name: --anchor-waffle;
+}
+
+#settings {
+  anchor-name: --anchor-settings;
+}
+
+ntp-waffle {
+  border-radius: 5px;
+  position-area: bottom span-right;
+  position-anchor: --anchor-waffle;
+}
+
+ntp-settings {
+  border-radius: 5px;
+  position-area: bottom span-left;
+  position-anchor: --anchor-settings;
+}
+
 .container{
     max-width:900px;
     margin:auto;
